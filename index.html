@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/media-query.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
   </head>
   <body>
     <main>
@@ -16,8 +18,36 @@
         <div id="formulario">
           <h1>Login</h1>
           <p>Seja bem-vindo(a)! Faça seu login para acessar sua conta!</p>
-          <form action="login.php" method="post">
+          <form action="login.php" method="post" autocomplete="on">
             <!-- dados do formulario -->
+            <div class="campo">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="email"
+                name="login"
+                id="llogin"
+                placeholder="seu e-mail aqui"
+                autocomplete="email"
+                required maxlength="30"
+              />
+              <!-- <label for="llogin">Login: </label> -->
+            </div>
+            <div class="campo">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                name="senha"
+                id="lsenha"
+                placeholder="sua senha aqui"
+                autocomplete="current-password"
+                required minlength="8" maxlength="20"
+              />
+              <!-- <label for="lsenha">Senha: </label> -->
+            </div>
+            <input type="submit" value="Entrar" />
+            <a href="esqueci-senha.html"
+              ><i class="fa-solid fa-envelope"></i> Esquecia senha </i
+            ></a>
           </form>
         </div>
       </section>
