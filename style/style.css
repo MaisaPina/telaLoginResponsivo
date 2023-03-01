@@ -63,3 +63,56 @@ main{
 #formulario > p{
   font-size: 0.8em;
 }
+
+form > div.campo{
+  display: block;
+  margin-bottom: 4px;
+  background-color: #379da6b9;
+  width: 100%; /*não pe vw pq é 100% só do container*/
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 4px 0px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+form > input[type=submit]{
+  display: block;
+  font-size: 1em;
+  width: 100%; /*não pe vw pq é 100% só do container*/
+  height: 30px;
+  background-color: #379da6b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+  background-color: #177780b9;
+}
+
+form > a.botao{
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  width: 100%; /*não pe vw pq é 1005 só do container*/
+  height: 30px;
+  background-color: #379da6b9 ;
+  color: white;
+  /* border: 1px solid #379da6b9; */
+  padding-top: 4px;
+  margin-top: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+form > a.botao:hover{
+  background-color: #177780b9;
+}
+
+form > a.botao > i{
+  font-size: 0.9em;
+}
