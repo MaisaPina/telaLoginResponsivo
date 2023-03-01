@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-/*
-  Paleta de Cores:
-  roxo: #5a3293
-  verde: #088e99
-  preto: #000000
-  branco: #ffffff
-*/
-
 *{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 0px;
@@ -16,9 +8,11 @@
 }
 
 body, html{
-  background-color: #5a3293;
+  /* background-color: #5a3293; */
+  /* background-color: #9573f1; */
   height: 100vh;
   width: 100vw;
+  background-image: linear-gradient(to top, #088e99, #5a3293); /*troca de cor no fundo*/
 }
 
 main{
@@ -31,20 +25,21 @@ main{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /*defini 50 top e left e fiz ele voltar 50 tbm, pra ficar no meio */
   overflow: hidden; /* tudo que estiver fora da borda ficará escondido */
   background-color: #ffffff;
   width: 250px;
-  height: 500px;
+  height: 480px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px #00000085; /*sombra em volta*/
   transition: width .3s, height .3s; /*animaçãozinha pra trocar de um tamanho pro outro*/
   transition-timing-function: ease; /* suavisar animação*/
+  transform: translate(-50%, -50%); /*defini 50 top e left e fiz ele voltar 50 tbm, pra ficar no meio */
 }
 
 #login > #imagem{
   display: block;
-  background: #5a3293 url(../img/pexels-miguel-á-padriñán-2882566.jpg) no-repeat;
+  /* background: #5a3293 url(../img/pexels-anni-roenkae-4175070.jpg) no-repeat; */
+  background: #9573f1 url(../img/pexels-anni-roenkae-4175070.jpg) no-repeat;
   background-size: cover;
   height: 200px;
 }
@@ -62,6 +57,7 @@ main{
 /*tamanho da fonte do texto*/
 #formulario > p{
   font-size: 0.8em;
+  margin: 10px 0px;
 }
 
 form > div.campo{
@@ -76,6 +72,22 @@ form > div.campo{
   margin: 4px 0px;
   padding-top: 4px;
   padding-left: 4px;
+}
+
+div.campo > i{
+  color: white;
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 14px;
+}
+
+div.campo > input{
+  border: none;
+  height: 80%;
+  border-radius: 4px;
+  padding: 4px;
+  width: calc(100% - 33px); /*input pegar o tamanho da div toda sem o ícone*/
+  transform: translateY(-1px); /*distância do input do topo da div*/
 }
 
 form > input[type=submit]{
